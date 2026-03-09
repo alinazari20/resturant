@@ -1,0 +1,202 @@
+/* 
+
+  /* Colors */
+/* --color-primary #ea6d27
+--color-dark #101a24
+--color-light #f3f4f4
+--color-text #716f6f */
+
+/* Spacing */
+/* --space-xp 1rem
+--space-sm 2rem
+--space-md 4rem
+--space-lg 8rem
+--space-xl 12rem */
+
+/* Fonts */
+/* --font-heading "David Libre", serif
+--font-body "Inter", sans-serif */
+
+/* Font sizes (desktop first, 10px base) */
+/* --fs-xs 1.2rem
+--fs-sm 1.6rem
+--fs-md 2rem
+--fs-lg 4rem
+--fs-xl 5rem */
+
+/* Border radius */
+/* --radius-sm 0.4rem
+--radius-md 1.2rem
+--radius-lg 4rem
+
+/* padding system
+--9.6rem 6.9rem large
+--6.9rem 4.9rem medium
+--4.9rem 3.6rem small
+--3.6rem 1.9rem too small
+*/
+
+*/ */ html {
+  font-size: 10px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
+
+.grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 9.6rem 6.9rem;
+}
+
+@media (max-width: 900px) {
+  /* ======== general section ======== */
+  .container {
+    padding: 6.9rem 4.9rem;
+  }
+
+  /* ======== hero section ======== */
+
+  .hero {
+    grid-template-columns: 1fr;
+    /* grid-template-rows: auto auto; */
+  }
+
+  .hero-image {
+    width: 70%;
+    order: -1;
+  }
+
+  /* .salon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+  /* ======== pricing section ======== */
+
+  .pricing-dishes-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2;
+  }
+
+  /* ======== testimonial section ======== */
+  .testimonial-section {
+    margin-bottom: 300px;
+  }
+
+  /* ======== price section ======== */
+  .pricing-dishes-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 100px;
+    align-items: center;
+  }
+  .welcome-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 100px;
+    align-items: center;
+  }
+  .chef {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 100px;
+    align-items: center;
+  }
+  .chef-image {
+    order: -1;
+  }
+}
+
+@media (max-width: 750px) {
+  /* ============header============ */
+  .container {
+    padding: 4.9rem 3.6rem;
+  }
+  /* ============header============ */
+  .header-list {
+    display: none;
+  }
+  /* .menu-icon-header {
+    display: contents;
+    width: 25px;
+    height: 25px;
+  } */
+  .header-menu-icon {
+    visibility: visible;
+    width: 30px;
+    height: 30px;
+  }
+  /* ============pricing dishes============ */
+  .pricing-dishes-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 150px;
+    justify-items: center;
+    align-items: center;
+    /* min-height: 60vh; */
+  }
+  .pricing-dishes {
+    /* left: 50%;
+  transform: translateX(-50%); */
+    width: 400px;
+  }
+  .menu-dish {
+    width: 55%;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .price {
+    top: -20%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+  /* ============testimonial cards============ */
+  .testimonial-section {
+    margin-bottom: 300px;
+  }
+
+  .testimonial-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 100px;
+    justify-items: center;
+    align-items: center;
+  }
+  /* =========== about section ============ */
+
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+  }
+
+  .about-links,
+  .about-follow {
+    /* .about-grid */
+    justify-items: center;
+  }
+}

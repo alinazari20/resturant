@@ -19,42 +19,42 @@
     />
 
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/components.css" rel="stylesheet" />
+    <link href="css/layout.css" rel="stylesheet" />
     <link href="css/general.css" rel="stylesheet" />
   </head>
   <body>
     <!-- ============================= header section ================ -->
-    <header class="container">
-      <img
-        src="images/logo-1.svg"
-        alt="resturant logo"
-        class="resturant-logo"
-      />
-
-      <nav class="links">
-        <a href="#">Menu</a>
-        <a href="#">Events</a>
-        <a href="#">Gallery</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </nav>
-
-      <button class="btn">Book a table</button>
+    <script src="js/header.js"></script>
+    <header class="container header-list">
+      <ion-icon class="header-menu-icon" name="menu-outline"></ion-icon>
+      <img src="images/logo-1.svg" alt="header-logo" />
+      <ul class="header-list">
+        <li>Menu</li>
+        <li>Events</li>
+        <li>Gallery</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <button class="header-btn">Book a Table</button>
     </header>
+
     <main>
       <!-- ======================== hero section ================== -->
-      <section class="hero">
+      <section class="hero container">
         <!-- ====================== left section ================ -->
 
         <div class="hero-content">
           <h1>We provide the best food for you</h1>
           <p class="hero-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            id nesciunt ducimus, totam magni officiis inventore sapiente atque
-            laborum ipsum quae, eveniet explicabo facere ullam natus eius
-            delectus velit soluta!
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <button class="hero-btn1">Menu</button>
-          <button class="hero-btn2">Book a table</button>
+          <div class="buttons-container">
+            <button class="hero-btn1">Menu</button>
+            <button class="hero-btn2">Book a table</button>
+          </div>
 
           <div class="hero-icons">
             <img src="images/logo/Facebook.svg" alt="facebook icon" />
@@ -98,184 +98,176 @@
       </section>
 
       <!-- ===================== special dishes ==================== -->
-      <section class="pricing-section">
-        <div class="pricing">
-          <div class="pricing-header">
-            <h2 class="pricing-title">Our Special Dishes</h2>
-            <p class="pricing-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. efje
-              dgdlkg dg dg d dgsdmsdnfsdn kadkdj
+      <section class="pricing-section container">
+        <div class="pricing-header">
+          <h2 class="pricing-title">Our Special Dishes</h2>
+          <p class="pricing-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. efje dgdlkg
+            dg dg d dgsdmsdnfsdn kadkdj
+          </p>
+
+          <img
+            src="images/svgs/Group (6).svg"
+            alt="designed leaf for background"
+            class="design5"
+          />
+          <img
+            src="images/svgs/Group (2).svg"
+            alt="designed leaf for background"
+            class="design6"
+          />
+        </div>
+
+        <div class="pricing-dishes-container">
+          <div class="pricing-dishes">
+            <img
+              src="images/dishes/dish-1.png"
+              alt="a bown of food"
+              class="menu-dish"
+            />
+            <span class="price">$12.99</span>
+            <p class="bowl-title">lumpia with suace</p>
+            <p class="bowl-info">
+              Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
+              eiusmod tempor
             </p>
+          </div>
+
+          <div class="pricing-dishes">
+            <img
+              src="images/dishes/dish-2.png"
+              alt="a bown of food"
+              class="menu-dish"
+            />
+            <span class="price">$12.99</span>
+            <p class="bowl-title">lumpia with suace</p>
+            <p class="bowl-info">
+              Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
+              eiusmod tempor
+            </p>
+          </div>
+
+          <div class="pricing-dishes">
+            <img
+              src="images/dishes/dish-3.png"
+              alt="a bown of food"
+              class="menu-dish"
+            />
+            <span class="price">$12.99</span>
+            <p class="bowl-title">lumpia with suace</p>
+            <p class="bowl-info">
+              Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
+              eiusmod tempor
+            </p>
+          </div>
+
+          <div class="pricing-dishes">
+            <img
+              src="images/dishes/dish-4.png"
+              alt="a bown of food"
+              class="menu-dish"
+            />
+            <span class="price">$12.99</span>
+            <p class="bowl-title">lumpia with suace</p>
+            <p class="bowl-info">
+              Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
+              eiusmod tempor
+            </p>
+          </div>
+          <div>
+            <img
+              src="images/svgs/group-13.svg"
+              alt="design image for background"
+              class="design7"
+            />
+            <img
+              src="images/svgs/Group (14).svg"
+              alt="design image for background"
+              class="design8"
+            />
+
+            <img
+              src="images/svgs/Group (15).svg"
+              alt="design image for background"
+              class="design9"
+            />
+          </div>
+        </div>
+
+        <div class="welcome-section">
+          <div class="welcome-image-container">
+            <img
+              src="images/welcome/dish-2.png"
+              alt="a bowl of food that served"
+              class="served-dish"
+            />
+            <img
+              src="images/welcome/leaf-1.png"
+              alt="design image for background"
+              class="design10"
+            />
+            <img
+              src="images/welcome/leaf-2.png"
+              alt="design image for background"
+              class="design11"
+            />
+            <img
+              src="images/welcome/leaf-3.png"
+              alt="design image for background"
+              class="design12"
+            />
+            <img
+              src="images/welcome/leaf-4.png"
+              alt="design image for background"
+              class="design13"
+            />
+            <img
+              src="images/svgs/Group.png"
+              alt="design for background "
+              class="bowl-design"
+            />
+          </div>
+          <div class="welcome-content">
+            <h3 class="welcome-title">Welcome to our restaurant</h3>
+            <p class="welcome-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. threw
+              fdjcsf sfns s vr s c.
+            </p>
+            <button class="welcome-btn1">menu</button>
+            <button class="welcome-btn2">Book a table</button>
 
             <img
               src="images/svgs/Group (6).svg"
               alt="designed leaf for background"
-              class="design5"
+              class="design14"
             />
             <img
-              src="images/svgs/Group (2).svg"
+              src="images/svgs/Group (7).svg"
               alt="designed leaf for background"
-              class="design6"
+              class="design15"
             />
-          </div>
-
-          <div class="pricing-dishes-container">
-            <div class="pricing-dishes">
-              <img
-                src="images/dishes/dish-1.png"
-                alt="a bown of food"
-                class="menu-dish"
-              />
-              <span class="price">$12.99</span>
-              <p class="bowl-title">lumpia with suace</p>
-              <p class="bowl-info">
-                Lorem ipsum dolor sit amet consectetur autem? Quasi eligendi
-                non, nesciunt rem exercitationem ducimus soluta architecto
-                quibusdam
-              </p>
-            </div>
-
-            <div class="pricing-dishes">
-              <img
-                src="images/dishes/dish-2.png"
-                alt="a bown of food"
-                class="menu-dish"
-              />
-              <span class="price">$12.99</span>
-              <p class="bowl-title">lumpia with suace</p>
-              <p class="bowl-info">
-                Lorem ipsum dolor sit amet consectetur autem? Quasi eligendi
-                non, nesciunt rem exercitationem ducimus soluta architecto
-                quibusdam
-              </p>
-            </div>
-
-            <div class="pricing-dishes">
-              <img
-                src="images/dishes/dish-3.png"
-                alt="a bown of food"
-                class="menu-dish"
-              />
-              <span class="price">$12.99</span>
-              <p class="bowl-title">lumpia with suace</p>
-              <p class="bowl-info">
-                Lorem ipsum dolor sit amet consectetur autem? Quasi eligendi
-                non, nesciunt rem exercitationem ducimus soluta architecto
-                quibusdam
-              </p>
-            </div>
-
-            <div class="pricing-dishes">
-              <img
-                src="images/dishes/dish-4.png"
-                alt="a bown of food"
-                class="menu-dish"
-              />
-              <span class="price">$12.99</span>
-              <p class="bowl-title">lumpia with suace</p>
-              <p class="bowl-info">
-                Lorem ipsum dolor sit amet consectetur autem? Quasi eligendi
-                non, nesciunt rem exercitationem ducimus soluta architecto
-                quibusdam
-              </p>
-            </div>
-            <div>
-              <img
-                src="images/svgs/group-13.svg"
-                alt="design image for background"
-                class="design7"
-              />
-              <img
-                src="images/svgs/Group (14).svg"
-                alt="design image for background"
-                class="design8"
-              />
-
-              <img
-                src="images/svgs/Group (15).svg"
-                alt="design image for background"
-                class="design9"
-              />
-            </div>
-          </div>
-
-          <div class="welcome-section">
-            <div class="welcome-image-container">
-              <img
-                src="images/welcome/dish-2.png"
-                alt="a bowl of food that served"
-                class="served-dish"
-              />
-              <img
-                src="images/welcome/leaf-1.png"
-                alt="design image for background"
-                class="design10"
-              />
-              <img
-                src="images/welcome/leaf-2.png"
-                alt="design image for background"
-                class="design11"
-              />
-              <img
-                src="images/welcome/leaf-3.png"
-                alt="design image for background"
-                class="design12"
-              />
-              <img
-                src="images/welcome/leaf-4.png"
-                alt="design image for background"
-                class="design13"
-              />
-              <img
-                src="images/svgs/Group.png"
-                alt="design for background "
-                class="bowl-design"
-              />
-            </div>
-            <div class="welcome-content">
-              <h3 class="welcome-title">Welcome to our restaurant</h3>
-              <p class="welcome-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                threw fdjcsf sfns s vr s c.
-              </p>
-              <button class="welcome-btn1">menu</button>
-              <button class="welcome-btn2">Book a table</button>
-
-              <img
-                src="images/svgs/Group (6).svg"
-                alt="designed leaf for background"
-                class="design14"
-              />
-              <img
-                src="images/svgs/Group (7).svg"
-                alt="designed leaf for background"
-                class="design15"
-              />
-              <img
-                src="images/svgs/Group (3).svg"
-                alt="designed leaf for background"
-                class="design16"
-              />
-              <img
-                src="images/svgs/Group (9).svg"
-                alt="designed leaf for background"
-                class="design17"
-              />
-            </div>
+            <img
+              src="images/svgs/Group (3).svg"
+              alt="designed leaf for background"
+              class="design16"
+            />
+            <img
+              src="images/svgs/Group (9).svg"
+              alt="designed leaf for background"
+              class="design17"
+            />
           </div>
         </div>
       </section>
 
       <!-- ================= experst chef section ===================== -->
-      <section class="chef">
+      <section class="chef container">
         <div class="chef-content">
           <h4 class="chef-title">Our Expect Chef</h4>
           <p class="chef-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, rem
-            ipsam! Nihil ex magnam, natus id commodi odio dolorum, impedit,
-            dolor veritatis ratione perferendis. Reprehenderit iste atque
-            provident beatae est.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <img
             src="images/svgs/Group (4).svg"
@@ -369,13 +361,13 @@
             <button class="chef-btn2">Book a Table</button>
           </div>
         </div>
-        <div>
+        <div class="chef-image">
           <img src="images/chef 1.png" />
         </div>
       </section>
 
       <!-- ======================== testimonial section (happy customers) ==================== -->
-      <section class="testimonial-section">
+      <section class="testimonial-section container">
         <div class="testimonial-content">
           <h4 class="testimonial-title">Our Happy Customers</h4>
           <p class="testimonial-text">
@@ -446,79 +438,82 @@
         <!-- ===================== cta section ================ -->
 
         <div class="cta-section">
-          <div class="cta-overlay">
-            <h1 class="cta-title">
-              Get Or Promo Code by Subscribing To our Newsletter
-            </h1>
+          <h1 class="cta-title">
+            Get Or Promo Code by Subscribing To our Newsletter
+          </h1>
 
-            <div class="subscribe-form">
-              <input
-                class="email-form"
-                type="email"
-                placeholder="Enter your email"
-                required
-              />
-              <button class="cta-btn" type="submit">Subscribe</button>
-            </div>
+          <div class="subscribe-form">
+            <input
+              class="email-form"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+            <button class="cta-btn" type="submit">Subscribe</button>
           </div>
         </div>
       </section>
 
       <!-- ============================ footer section =============== -->
-      <footer class="about-section">
-        <div class="about-content">
-          <div class="about-info">
-            <img
-              src="images/logo-1.svg"
-              alt="resturant logo"
-              class="about-resturant-logo"
-            />
-            <p class="about-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore .<a href="#"
-                >Learn more</a
-              >
-            </p>
-            <p class="about-opening-hours"><strong>OPENING HOURS</strong></p>
-            <div class="about-opening-hours-container">
-              <div class="timetable">
-                <div>
-                  <div>
-                    <p>Monday - Friday</p>
-                  </div>
-                  <div><p>8:00 am to 9:00 pm</p></div>
-                </div>
-                <div>
-                  <div><p>Saturday</p></div>
-                  <div><p>8:00 am to 9:00 pm</p></div>
-                </div>
-                <div>
-                  <div><p>Sunday</p></div>
-                  <div><p>CLOSED</p></div>
-                </div>
+
+      <footer class="about-section container">
+        <div class="about-container">
+          <div class="about-content">
+            <div class="about-info">
+              <img
+                src="images/logo-1.svg"
+                alt="resturant logo"
+                class="about-resturant-logo"
+              />
+              <p class="about-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore .<a href="#"
+                  >Learn more</a
+                >
+              </p>
+              <p class="about-opening-hours"><strong>OPENING HOURS</strong></p>
+              <div class="about-opening-hours-container">
+                <ul class="about-list">
+                  <li>Monday - Friday:</li>
+                  <li>8:00 am to 9:00 pm</li>
+                </ul>
+                <ul class="about-list">
+                  <li>Saturday:</li>
+                  <li>8:00 am to 9:00 pm</li>
+                </ul>
+                <ul class="about-list">
+                  <li>Sunday:</li>
+                  <li>CLOSED</li>
+                </ul>
               </div>
             </div>
-          </div>
-          <div class="about-links about-grid">
-            <p><span class="about-span">Navigation</span></p>
-            <p>Menu</p>
-            <p>About Us</p>
-            <p>Contact us</p>
-            <p>Main dishes</p>
-          </div>
-          <div class="about-dishes about-grid">
-            <p><span class="about-span">DISHES</span></p>
-            <p>Fish & Viggies</p>
-            <p>Tofu Chili</p>
-            <p>Egg & Cocumber</p>
-            <p>Lumpia w/Suace</p>
-          </div>
-          <div class="about-follow about-grid">
-            <p><span class="about-span">FOLLOW US</span></p>
-            <div>
-              <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
-              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
-              <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+            <div class="about-links about-grid">
+              <ul class="about-list-links">
+                <li><span class="about-span">Navigation</span></li>
+                <li>Menu</li>
+                <li>About Us</li>
+                <li>Contact us</li>
+                <li>Main dishes</li>
+              </ul>
+            </div>
+            <div class="about-dishes about-grid">
+              <ul class="about-list-links">
+                <li><span class="about-span">DISHES</span></li>
+                <li>Fish & Viggies</li>
+                <li>Tofu Chili</li>
+                <li>Egg & Cocumber</li>
+                <li>Lumpia w/Suace</li>
+              </ul>
+            </div>
+            <div class="about-follow about-grid">
+              <ul class="about-list-links">
+                <li><span class="about-span">FOLLOW US</span></li>
+              </ul>
+              <div>
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+              </div>
             </div>
           </div>
         </div>
